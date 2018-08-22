@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IM和弹幕</title>
+  <link rel="stylesheet" type="text/css" href="../dist/css/barrager.css">
+</head>
+<body>
+  <div id="messBtn" onclick="run_example()">弹弹弹</div>
+  
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+  <script type="text/javascript" src="../dist/js/jquery.barrager.min.js"></script>
+  <script>
+    function  run_example(){
+      var example_item={'img':'../assets/heisenberg.png','info':'Hello world!'};
+      $('body').barrager(example_item);
+      return false;
+    }
+  </script>
+</body>
+</html>
